@@ -1,0 +1,1218 @@
+{
+  "common": {
+    "theme": {
+      "fonts": {
+        "primary": "var(--font-poppins), 'Poppins', sans-serif",
+        "heading": "var(--font-poppins), 'Poppins', sans-serif",
+        "navigation": "var(--font-poppins), 'Poppins', sans-serif"
+      }
+    },
+    "metadata": {
+      "title": "Petlimb | Modern Pet Wellness",
+      "description": "Petlimb offers thoughtful pet wellness, grooming, daycare and preventive care in a calm boutique setting.",
+      "icon": "/main logo/logo.webp"
+    },
+    "globalUI": {
+      "breadcrumbSeparator": "›",
+      "breadcrumbImage": "/petlimb/hero-v2.webp"
+    },
+    "Footer": {
+      "brandName": "Petlimb",
+      "description": "Thoughtful care for bright eyes, wagging tails and the people who love them.",
+      "logo": "/main logo/logo.webp",
+      "logoAlt": "Petlimb Pet Wellness",
+      "logoUrl": "/",
+      "footerImage": "/main logo/footer_image.webp",
+      "footerImageAlt": "Petlimb dog and cat companions",
+      "copyrightText": "© 2026 Petlimb Pet Wellness. All rights reserved.",
+      "quickLinksTitle": "MENU",
+      "contactTitle": "CONTACT",
+      "socialTitle": "SOCIAL",
+      "socialLinks": [
+        {
+          "id": "social-facebook",
+          "icon": "FaFacebookF",
+          "label": "Facebook",
+          "url": "https://facebook.com"
+        },
+        {
+          "id": "social-linkedin",
+          "icon": "FaLinkedinIn",
+          "label": "LinkedIn",
+          "url": "https://linkedin.com"
+        },
+        {
+          "id": "social-youtube",
+          "icon": "FaYoutube",
+          "label": "YouTube",
+          "url": "https://youtube.com"
+        }
+      ],
+      "quickLinks": [
+        {
+          "id": "quick-home",
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "id": "quick-about",
+          "label": "About Us",
+          "url": "/about"
+        },
+        {
+          "id": "quick-faqs",
+          "label": "FAQs",
+          "url": "/faqs"
+        },
+        {
+          "id": "quick-team",
+          "label": "Our Team",
+          "url": "/team"
+        },
+        {
+          "id": "quick-gallery",
+          "label": "Gallery",
+          "url": "/gallery"
+        },
+        {
+          "id": "quick-contact",
+          "label": "Contact Us",
+          "url": "/contact"
+        }
+      ],
+      "contactItems": [
+        {
+          "id": "contact-address",
+          "icon": "FaMapMarkerAlt",
+          "value": "48 Grove Street, New York, NY",
+          "url": "https://www.google.com/maps/search/?api=1&query=48+Grove+Street%2C+New+York%2C+NY"
+        },
+        {
+          "id": "contact-phone",
+          "icon": "FaPhoneAlt",
+          "value": "+1-212-555-0148",
+          "url": "tel:+12125550148"
+        },
+        {
+          "id": "contact-email",
+          "icon": "FaEnvelope",
+          "value": "hello@petlimb.com",
+          "url": "mailto:hello@petlimb.com"
+        }
+      ]
+    },
+    "notFound": {
+      "code": "404",
+      "title": "Oops! Page Not Found",
+      "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+      "buttonText": "Back to Home",
+      "buttonUrl": "/"
+    },
+    "aboutBreadcrumb": {
+      "title": "About Us",
+      "paths": [
+        {
+          "id": "breadcrumb-about-home",
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "id": "breadcrumb-about-current",
+          "label": "About Us"
+        }
+      ]
+    },
+    "servicesBreadcrumb": {
+      "title": "Services",
+      "paths": [
+        {
+          "id": "breadcrumb-services-home",
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "id": "breadcrumb-services-current",
+          "label": "Services"
+        }
+      ]
+    },
+    "faqsBreadcrumb": {
+      "title": "Faqs",
+      "paths": [
+        {
+          "id": "breadcrumb-faqs-home",
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "id": "breadcrumb-faqs-current",
+          "label": "Faqs"
+        }
+      ]
+    },
+    "contactBreadcrumb": {
+      "title": "Contact Us",
+      "paths": [
+        {
+          "id": "breadcrumb-contact-home",
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "id": "breadcrumb-contact-current",
+          "label": "Contact Us"
+        }
+      ]
+    },
+    "bookAppointmentBreadcrumb": {
+      "title": "Book Now",
+      "paths": [
+        {
+          "id": "breadcrumb-book-event-home",
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "id": "breadcrumb-book-event-current",
+          "label": "Book Now"
+        }
+      ]
+    },
+    "galleryBreadcrumb": {
+      "title": "Gallery",
+      "paths": [
+        {
+          "id": "breadcrumb-gallery-home",
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "id": "breadcrumb-gallery-current",
+          "label": "Gallery"
+        }
+      ]
+    },
+    "teamBreadcrumb": {
+      "title": "Our Team",
+      "paths": [
+        {
+          "id": "breadcrumb-team-home",
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "id": "breadcrumb-team-current",
+          "label": "Our Team"
+        }
+      ]
+    }
+  },
+  "categories": {
+    "Pet": {
+      "sections": {
+        "TopBar": {
+          "variants": {
+            "PetTopBar3": {
+              "tagline": "Calm care. Happier companions.",
+              "taglineIcon": "FaChartLine",
+              "phoneValue": "+1-212-555-0148",
+              "emailValue": "hello@petlimb.com",
+              "locationValue": "West Village, New York",
+              "socialLinks": [
+                { "id": "top-instagram", "icon": "FaInstagram", "url": "https://instagram.com" },
+                { "id": "top-youtube", "icon": "FaYoutube", "url": "https://youtube.com" }
+              ]
+            }
+          }
+        },
+        "Header": {
+          "variants": {
+            "PetHeader3": {
+              "brandName": "Petlimb",
+              "brandTagline": "Pet wellness, thoughtfully done",
+              "logo": "/main logo/logo.webp",
+              "logoAlt": "Petlimb Pet Wellness",
+              "logoUrl": "/",
+              "navLinksLeft": [
+                {
+                  "id": "nav-home",
+                  "label": "Home",
+                  "url": "/"
+                },
+                {
+                  "id": "nav-about",
+                  "label": "About Us",
+                  "url": "/about"
+                },
+                {
+                  "id": "nav-faqs",
+                  "label": "FAQs",
+                  "url": "/faqs"
+                },
+                {
+                  "id": "nav-services",
+                  "label": "Services",
+                  "url": "/services"
+                },
+                {
+                  "id": "nav-gallery",
+                  "label": "Gallery",
+                  "url": "/gallery"
+                },
+                {
+                  "id": "nav-team",
+                  "label": "Our Team",
+                  "url": "/team"
+                },
+                {
+                  "id": "nav-contact",
+                  "label": "Contact Us",
+                  "url": "/contact"
+                }
+              ],
+              "navLinksRight": [],
+              "contactButton": {
+                "text": "Book Now",
+                "url": "/book-now",
+                "icon": "FaCalendarAlt"
+              },
+              "openMenuLabel": "Open navigation menu",
+              "closeMenuLabel": "Close navigation menu",
+              "phoneNumber": "+1-212-555-0148",
+              "phoneUrl": "tel:+12125550148",
+              "phoneCaption": "Speak to Our Pet Care Expert",
+              "favoritesUrl": "/book-now",
+              "favoritesLabel": "Book Now"
+            }
+          }
+        },
+        "Hero": {
+          "variants": {
+            "PetHero3": {
+              "titleLine1": "A softer way to",
+              "highlightedTitle": "care deeply",
+              "image": "/petlimb/hero-v2.webp",
+              "imageAlt": "A golden retriever and gray tabby cat in a warm modern pet wellness studio",
+              "titleLine2": "for every paw.",
+              "trustLead": "Boutique care, beautifully considered",
+              "trustHighlight": "healthier pets and calmer humans.",
+              "ctaText": "Plan a Visit",
+              "ctaUrl": "/book-now",
+              "ctaIconLabel": "Trusted local specialists"
+            }
+          }
+        },
+        "AboutUs": {
+          "variants": {
+            "PetAboutUs3": {
+              "titleLine1": "Care that feels",
+              "highlightedTitle": "personal",
+              "description": "At Petlimb, expert care meets a calmer, more considered experience. Every visit is shaped around your pet’s comfort, routine and long-term wellbeing.",
+              "imageMain": "/petlimb/about.webp",
+              "imageMainAlt": "A caring pet wellness specialist with a calm cream-colored dog",
+              "eyebrow": "THE PETLIMB APPROACH",
+              "titleLine2": "from the first hello.",
+              "buttonText": "About Us",
+              "buttonUrl": "/about"
+            }
+          }
+        },
+        "Gallery": {
+          "variants": {
+            "PetGallery3": {
+              "openLabel": "Open gallery image",
+              "closeLabel": "Close gallery image",
+              "previousLabel": "Previous gallery image",
+              "nextLabel": "Next gallery image",
+              "images": [
+                {
+                  "id": "gallery-pet-1",
+                  "image": "/gallery/g1.webp",
+                  "imageAlt": "A veterinarian checking a golden retriever with its family",
+                  "category": "veterinary-care"
+                },
+                {
+                  "id": "gallery-pet-2",
+                  "image": "/gallery/g2.webp",
+                  "imageAlt": "Veterinary team examining a golden retriever",
+                  "category": "veterinary-care"
+                },
+                {
+                  "id": "gallery-pet-3",
+                  "image": "/gallery/g3.webp",
+                  "imageAlt": "A veterinarian caring for a small dog",
+                  "category": "veterinary-care"
+                },
+                {
+                  "id": "gallery-pet-4",
+                  "image": "/gallery/g4.webp",
+                  "imageAlt": "A groomer carefully trimming a small dog",
+                  "category": "pet-grooming"
+                },
+                {
+                  "id": "gallery-pet-5",
+                  "image": "/gallery/g5.webp",
+                  "imageAlt": "A happy dog enjoying a bath",
+                  "category": "pet-grooming"
+                },
+                {
+                  "id": "gallery-pet-6",
+                  "image": "/gallery/g6.webp",
+                  "imageAlt": "A trainer working with a dog outdoors",
+                  "category": "dog-training"
+                },
+                {
+                  "id": "gallery-pet-7",
+                  "image": "/gallery/g7.webp",
+                  "imageAlt": "A groomer trimming a dog in the salon",
+                  "category": "pet-grooming"
+                },
+                {
+                  "id": "gallery-pet-8",
+                  "image": "/gallery/g8.webp",
+                  "imageAlt": "Veterinarians caring for a small dog",
+                  "category": "veterinary-care"
+                }
+              ],
+              "subtitle": "IMAGE GALLERY",
+              "title": "Moments of Care,",
+              "highlightedTitle": "Happiness and Togetherness",
+              "description": "A glimpse into the loving care, fun moments, and happy experiences at our pet care centre."
+            }
+          }
+        },
+        "Faq": {
+          "variants": {
+            "PetFaq3": {
+              "subtitle": "FAQS",
+              "title1": "We\u2019re Here to Answer",
+              "highlightedTitle": "Your Questions",
+              "description": "Find answers to common questions about our pet care services, facilities, and the care we provide.",
+              "expandLabel": "Expand answer",
+              "collapseLabel": "Collapse answer",
+              "items": [
+                {
+                  "id": "faq-services",
+                  "number": "01",
+                  "question": "What services do you provide at Petlimb?",
+                  "answer": "We offer grooming, daycare, boarding, wellness support, and basic health care to provide a safe, comfortable, and enjoyable experience for your pet."
+                },
+                {
+                  "id": "faq-grooming-safety",
+                  "number": "02",
+                  "question": "Is grooming safe for all breeds?",
+                  "answer": "Yes. Our trained groomers adapt products, tools, and handling techniques to suit your pet\u2019s breed, coat type, age, and comfort level."
+                },
+                {
+                  "id": "faq-pet-boarding",
+                  "number": "03",
+                  "question": "Do you offer pet boarding?",
+                  "answer": "Yes. We provide secure, comfortable boarding with attentive care, regular activity, feeding, and supervision throughout your pet\u2019s stay."
+                },
+                {
+                  "id": "faq-daycare-timings",
+                  "number": "04",
+                  "question": "What are your daycare timings?",
+                  "answer": "Our daycare operates during regular business hours. Please contact our team before visiting to confirm the current schedule and availability."
+                },
+                {
+                  "id": "faq-book-appointment",
+                  "number": "05",
+                  "question": "How do I book an appointment?",
+                  "answer": "Use the Book Now button, call our care team, or send us a message with your preferred service, date, and time."
+                },
+                {
+                  "id": "faq-vaccinations",
+                  "number": "06",
+                  "question": "Are vaccinations required?",
+                  "answer": "Vaccination requirements depend on the selected service. Our team will explain the health records needed when your appointment is confirmed."
+                },
+                {
+                  "id": "faq-stay-during-grooming",
+                  "number": "07",
+                  "question": "Can I stay with my pet during grooming?",
+                  "answer": "This depends on your pet\u2019s comfort and the grooming area. Our team will recommend the calmest and safest arrangement for the session."
+                },
+                {
+                  "id": "faq-boarding-food-bedding",
+                  "number": "08",
+                  "question": "Do you provide food and bedding during boarding?",
+                  "answer": "Yes. Clean bedding and suitable meals can be provided, and you may also share your pet\u2019s usual diet or bring approved food when needed."
+                }
+              ],
+              "image": "/about/1.webp",
+              "imageAlt": "A golden retriever and cat resting together"
+            }
+          }
+        },
+        "OurService": {
+          "variants": {
+            "PetOurService3": {
+              "subtitle": "OUR SERVICES",
+              "highlightedTitle": "All In One Place.",
+              "description": "Choose a focused visit or build a thoughtful routine around your pet. Petlimb makes excellent care feel beautifully simple.",
+              "linkText": "View All Services",
+              "services": [
+                {
+                  "id": "service-health-checkup",
+                  "number": "01",
+                  "title": "General Health Checkup",
+                  "description": "Complete health assessments to keep your pet in the best shape.",
+                  "icon": "FaStethoscope",
+                  "url": "/services/details"
+                },
+                {
+                  "id": "service-vaccination-preventive-care",
+                  "number": "02",
+                  "title": "Vaccination & Preventive Care",
+                  "description": "Essential vaccines and preventive treatments for a healthier, safer life.",
+                  "icon": "FaSyringe",
+                  "url": "/services/details"
+                },
+                {
+                  "id": "service-grooming-hygiene",
+                  "number": "03",
+                  "title": "Grooming & Hygiene",
+                  "description": "Gentle grooming, bathing and coat care for a clean and happy pet.",
+                  "icon": "FaCut",
+                  "url": "/services/details"
+                },
+                {
+                  "id": "service-pet-daycare",
+                  "number": "04",
+                  "title": "Pet Daycare",
+                  "description": "Supervised play, attention and care while you're away.",
+                  "icon": "FaHome",
+                  "url": "/services/details"
+                },
+                {
+                  "id": "service-pet-boarding",
+                  "number": "05",
+                  "title": "Pet Boarding",
+                  "description": "A safe, comfortable stay with round-the-clock care.",
+                  "icon": "FaPaw",
+                  "url": "/services/details"
+                }
+              ],
+              "titleLine1": "Everything",
+              "titleLine2": "They Need,",
+              "linkUrl": "/services"
+            }
+          }
+        },
+        "ServicesPage": {
+          "variants": {
+            "PetServicesPage3": {
+              "eyebrow": "OUR SERVICES",
+              "title": "Complete Care",
+              "highlightedTitle": "For A Happier, Healthier Pet",
+              "description": "From preventive wellness to everyday comfort, Petlimb offers thoughtful services that help pets feel their brightest.",
+              "cards": [
+                {
+                  "id": "services-page-health-checkup",
+                  "title": "General Health Checkup",
+                  "description": "Complete health assessments to keep your pet in the best shape at every stage of life.",
+                  "image": "/service/fluffy-cat.webp",
+                  "imageAlt": "Veterinary team giving a cat a gentle health checkup",
+                  "url": "/services/details"
+                },
+                {
+                  "id": "services-page-grooming",
+                  "title": "Grooming & Hygiene",
+                  "description": "Gentle grooming, bathing and coat care for a clean, healthy and comfortable pet.",
+                  "image": "/service/grooming.webp",
+                  "imageAlt": "Pet groomer brushing a golden retriever",
+                  "url": "/services/details"
+                },
+                {
+                  "id": "services-page-daycare",
+                  "title": "Pet Daycare",
+                  "description": "Supervised play, social interaction and attentive care while you are away.",
+                  "image": "/gallery/g1.webp",
+                  "imageAlt": "Happy dog enjoying attentive daycare",
+                  "url": "/services/details"
+                },
+                {
+                  "id": "services-page-boarding",
+                  "title": "Pet Boarding",
+                  "description": "A safe, comfortable stay with dependable care and personal attention.",
+                  "image": "/about/1.webp",
+                  "imageAlt": "Dog and cat relaxing together in a comfortable pet care space",
+                  "url": "/services/details"
+                }
+              ]
+            }
+          }
+        },
+        "Care": {
+          "variants": {
+            "PetCare3": {
+              "eyebrow": "MOST LOVED",
+              "title": "Care That",
+              "highlightedTitle": "Feels Like Home.",
+              "description": "Play, rest, companionship and expert care — with updates so you're always in the loop.",
+              "image": "/petlimb/contact.webp",
+              "imageAlt": "A pet parent relaxing with a spaniel and orange cat",
+              "arrowLabel": "Contact Petlimb",
+              "buttonUrl": "/contact"
+            }
+          }
+        },
+        "ServiceDetail": {
+          "variants": {
+            "PetServiceDetail3": {
+              "canonicalServiceId": "pet-grooming",
+              "services": [
+                {
+                  "id": "pet-grooming",
+                  "title": "Pet Grooming",
+                  "image": "/service/grooming.webp",
+                  "imageAlt": "Professional groomer brushing a relaxed golden retriever",
+                  "subtitle": "DOG GROOMING",
+                  "heading": "Healthy Coats,",
+                  "highlightedHeading": "Happier Pets",
+                  "description": "Our professional grooming service keeps your pet clean, healthy and comfortable. From bathing and brushing to nail trimming and ear cleaning, every visit is tailored to your pet's needs.",
+                  "highlights": [
+                    {
+                      "id": "grooming-highlight-gentle-safe",
+                      "title": "Gentle & Safe Grooming",
+                      "description": "Handled by trained professionals with a calm and caring approach.",
+                      "icon": "FaBath"
+                    },
+                    {
+                      "id": "grooming-highlight-complete-care",
+                      "title": "Complete Care",
+                      "description": "Bathing, brushing, nail trimming, ear cleaning and coat care.",
+                      "icon": "FaHeart"
+                    },
+                    {
+                      "id": "grooming-highlight-fresh-look",
+                      "title": "Fresh & Healthy Look",
+                      "description": "Keeps your pet clean, comfortable and looking their best.",
+                      "icon": "FaPaw"
+                    }
+                  ],
+                  "offerSubtitle": "CARE FROM NOSE TO TAIL",
+                  "offerTitle": "A Fresh, Comfortable Finish",
+                  "offerDescription": "Every grooming visit is tailored to your pet?s coat, comfort and individual needs.",
+                  "offers": [
+                    {
+                      "id": "grooming-offer-bath",
+                      "text": "Bathing and blow drying"
+                    },
+                    {
+                      "id": "grooming-offer-brush",
+                      "text": "Brushing and coat care"
+                    },
+                    {
+                      "id": "grooming-offer-haircut",
+                      "text": "Haircuts and breed styling"
+                    },
+                    {
+                      "id": "grooming-offer-nails",
+                      "text": "Nail trimming"
+                    },
+                    {
+                      "id": "grooming-offer-ears",
+                      "text": "Gentle ear cleaning"
+                    },
+                    {
+                      "id": "grooming-offer-check",
+                      "text": "Comfort checks throughout the visit"
+                    }
+                  ],
+                  "processBadge": "HOW IT WORKS",
+                  "processTitle": "Simple Steps for a",
+                  "processHighlightedTitle": "Stress-Free Grooming Experience",
+                  "steps": [
+                    {
+                      "id": "grooming-step-book",
+                      "number": "Step 01",
+                      "title": "Book Your Visit",
+                      "description": "Choose a convenient time for your pet's grooming session.",
+                      "image": "/service/bath&blow.webp",
+                      "imageAlt": "Dog receiving a gentle bath during a grooming appointment"
+                    },
+                    {
+                      "id": "grooming-step-session",
+                      "number": "Step 02",
+                      "title": "Grooming Session",
+                      "description": "Our experts provide gentle and complete grooming care.",
+                      "image": "/service/washing-dog.webp",
+                      "imageAlt": "Professional groomer washing a dog with care"
+                    },
+                    {
+                      "id": "grooming-step-happy-pet",
+                      "number": "Step 03",
+                      "title": "A Clean & Happy Pet",
+                      "description": "Your pet leaves looking, feeling and smelling fresh.",
+                      "image": "/service/hair&style.webp",
+                      "imageAlt": "Freshly groomed dog looking clean and happy"
+                    }
+                  ],
+                  "advantageBadge": "THE PETLIMB DIFFERENCE",
+                  "advantageTitle": "More Than Grooming,",
+                  "advantageHighlightedTitle": "Care in Every Detail",
+                  "advantages": [
+                    {
+                      "id": "grooming-advantage-experience",
+                      "title": "Experienced Groomers",
+                      "description": "Skilled professionals who understand your pet's needs and behaviour.",
+                      "image": "/service/nail.webp",
+                      "imageAlt": "Experienced groomer carefully trimming a pet's nails"
+                    },
+                    {
+                      "id": "grooming-advantage-hygiene",
+                      "title": "Clean & Hygienic Spaces",
+                      "description": "Well-maintained, pet-safe spaces for a clean and healthy experience.",
+                      "image": "/service/ear cleaning.webp",
+                      "imageAlt": "Clean professional pet grooming workspace"
+                    },
+                    {
+                      "id": "grooming-advantage-personalized",
+                      "title": "Personalized Care",
+                      "description": "Grooming tailored to your pet's breed, coat type and individual needs.",
+                      "image": "/service/grooming.webp",
+                      "imageAlt": "Groomer giving personalized coat care to a golden retriever"
+                    },
+                    {
+                      "id": "grooming-advantage-happier",
+                      "title": "A Happier, Healthier Pet",
+                      "description": "Regular grooming keeps your pet clean, comfortable and confident every day.",
+                      "image": "/service/fluffy-cat.webp",
+                      "imageAlt": "Healthy cat receiving calm professional care"
+                    }
+                  ],
+                  "breadcrumb": {
+                    "title": "Services Details",
+                    "paths": [
+                      {
+                        "id": "pet-grooming-breadcrumb-home",
+                        "label": "Home",
+                        "url": "/"
+                      },
+                      {
+                        "id": "pet-grooming-breadcrumb-services",
+                        "label": "Services",
+                        "url": "/services"
+                      },
+                      {
+                        "id": "pet-grooming-breadcrumb-current",
+                        "label": "Services Details"
+                      }
+                    ]
+                  },
+                  "closingSubtitle": "ADDITIONAL BENEFITS",
+                  "closingTitle": "Healthy Pets, Happier Lives",
+                  "closingDescription": "Regular grooming helps maintain a clean coat, supports healthy skin, reduces shedding and keeps your pet comfortable in every season."
+                }
+              ]
+            }
+          }
+        },
+        "Testimonials": {
+          "variants": {
+            "PetTestimonials3": {
+              "subtitle": "Testimonials",
+              "title1": "Loved by pets.",
+              "highlightedTitle": "Trusted by their people.",
+              "description": "Notes from pet parents who trust Petlimb with the companions they love. Every detail is designed for more comfort, confidence and joy.",
+              "buttonText": "Write a Review",
+              "buttonUrl": "/contact",
+              "slideLabel": "Show testimonial",
+              "image": "/other/1.webp",
+              "imageAlt": "A golden retriever and cat peeking over a pale blue backdrop",
+              "testimonials": [
+                {
+                  "id": "testimonial-priya-sharma",
+                  "name": "Priya Sharma",
+                  "location": "Pet Parent",
+                  "quote": "\"Petlimb has been wonderful for my dog. The team is patient, thoughtful and incredibly clear. We both leave feeling completely at ease.\"",
+                  "avatar": "/about/author-1.webp",
+                  "avatarAlt": "Priya Sharma",
+                  "rating": 5
+                },
+                {
+                  "id": "testimonial-amit-verma",
+                  "name": "Amit Verma",
+                  "location": "Pet Parent",
+                  "quote": "\"The Petlimb team truly cares. My cat used to be anxious, but their calm approach has completely changed how she feels about visits.\"",
+                  "avatar": "/about/author-2.webp",
+                  "avatarAlt": "Amit Verma",
+                  "rating": 5
+                },
+                {
+                  "id": "testimonial-neha-kapoor",
+                  "name": "Neha Kapoor",
+                  "location": "Pet Parent",
+                  "quote": "\"Such a beautiful, calm environment. The team is knowledgeable and genuinely loves animals. Petlimb is now our trusted care home.\"",
+                  "avatar": "/about/author-3.webp",
+                  "avatarAlt": "Neha Kapoor",
+                  "rating": 5
+                }
+              ]
+            }
+          }
+        },
+        "whyChooseUs": {
+          "variants": {
+            "PetAboutWhyChooseUs3": {
+              "badge": "Why Choose Us",
+              "title": "More Than Grooming,",
+              "highlightedTitle": "A Happier, Healthier Life",
+              "description": "We focus on gentle care, clean spaces, and personalized attention to make every grooming session safe, comfortable and enjoyable for your pet.",
+              "features": [
+                {
+                  "id": "why-experienced-groomers",
+                  "title": "Experienced Groomers",
+                  "description": "Trained professionals who understand your pet's needs.",
+                  "image": "/service/grooming.webp",
+                  "imageAlt": "Experienced groomer gently grooming a golden retriever"
+                },
+                {
+                  "id": "why-clean-hygienic-spaces",
+                  "title": "Clean & Hygienic Spaces",
+                  "description": "Well-maintained, pet-safe grooming environment.",
+                  "image": "/service/dog-bathtub.webp",
+                  "imageAlt": "Clean and hygienic grooming space for pets"
+                },
+                {
+                  "id": "why-personalized-care",
+                  "title": "Personalized Care",
+                  "description": "Grooming tailored to your pet's breed, coat and comfort.",
+                  "image": "/service/nail.webp",
+                  "imageAlt": "Personalized gentle pet care and nail trimming"
+                },
+                {
+                  "id": "why-hassle-free-experience",
+                  "title": "Hassle-Free Experience",
+                  "description": "A calm, caring and stress-free visit for both you and your pet.",
+                  "image": "/gallery/g1.webp",
+                  "imageAlt": "Happy pet owner petting dog during a hassle-free visit"
+                }
+              ]
+            }
+          }
+        },
+        "BookAppointment": {
+          "variants": {
+            "PetBookAppointment3": {
+              "intro": {
+                "eyebrow": "BOOK YOUR VISIT",
+                "title": "Plan their next",
+                "highlightedTitle": "happy visit"
+              },
+              "form": {
+                "fields": [
+                  {
+                    "id": "appointment-owner-name",
+                    "name": "ownerName",
+                    "type": "text",
+                    "label": "Pet Owner Name",
+                    "placeholder": "Pet Owner Name *",
+                    "required": true,
+                    "width": "half"
+                  },
+                  {
+                    "id": "appointment-email",
+                    "name": "email",
+                    "type": "email",
+                    "label": "Email Address",
+                    "placeholder": "Email Address *",
+                    "required": true,
+                    "width": "half"
+                  },
+                  {
+                    "id": "appointment-phone",
+                    "name": "phone",
+                    "type": "tel",
+                    "label": "Phone Number",
+                    "placeholder": "Phone Number *",
+                    "required": true,
+                    "width": "half"
+                  },
+                  {
+                    "id": "appointment-pet-name",
+                    "name": "petName",
+                    "type": "text",
+                    "label": "Pet Name",
+                    "placeholder": "Pet Name *",
+                    "required": true,
+                    "width": "half"
+                  },
+                  {
+                    "id": "appointment-pet-type",
+                    "name": "petType",
+                    "type": "select",
+                    "label": "Pet Type",
+                    "placeholder": "Pet Type *",
+                    "required": true,
+                    "width": "half",
+                    "options": [
+                      {
+                        "id": "appointment-pet-dog",
+                        "title": "Dog",
+                        "value": "dog"
+                      },
+                      {
+                        "id": "appointment-pet-cat",
+                        "title": "Cat",
+                        "value": "cat"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "appointment-breed",
+                    "name": "breed",
+                    "type": "text",
+                    "label": "Breed",
+                    "placeholder": "Breed (Optional)",
+                    "required": false,
+                    "width": "half"
+                  },
+                  {
+                    "id": "appointment-date",
+                    "name": "preferredDate",
+                    "type": "date",
+                    "label": "Preferred Date",
+                    "placeholder": "Preferred Date *",
+                    "required": true,
+                    "width": "half"
+                  },
+                  {
+                    "id": "appointment-time",
+                    "name": "preferredTime",
+                    "type": "select",
+                    "label": "Preferred Time",
+                    "placeholder": "Preferred Time *",
+                    "required": true,
+                    "width": "half",
+                    "options": [
+                      {
+                        "id": "appointment-time-morning",
+                        "title": "9:00 AM - 11:00 AM",
+                        "value": "9am-11am"
+                      },
+                      {
+                        "id": "appointment-time-late-morning",
+                        "title": "11:00 AM - 1:00 PM",
+                        "value": "11am-1pm"
+                      },
+                      {
+                        "id": "appointment-time-afternoon",
+                        "title": "2:00 PM - 4:00 PM",
+                        "value": "2pm-4pm"
+                      },
+                      {
+                        "id": "appointment-time-evening",
+                        "title": "4:00 PM - 6:00 PM",
+                        "value": "4pm-6pm"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "appointment-service",
+                    "name": "service",
+                    "type": "select",
+                    "label": "Service Required",
+                    "placeholder": "Service Required *",
+                    "required": true,
+                    "width": "full",
+                    "options": [
+                      {
+                        "id": "appointment-service-health",
+                        "title": "General Health Checkup",
+                        "value": "health-checkup"
+                      },
+                      {
+                        "id": "appointment-service-grooming",
+                        "title": "Grooming & Hygiene",
+                        "value": "grooming"
+                      },
+                      {
+                        "id": "appointment-service-daycare",
+                        "title": "Pet Daycare",
+                        "value": "daycare"
+                      },
+                      {
+                        "id": "appointment-service-boarding",
+                        "title": "Pet Boarding",
+                        "value": "boarding"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "appointment-message",
+                    "name": "message",
+                    "type": "textarea",
+                    "label": "Additional Information",
+                    "placeholder": "Additional Information (Optional)",
+                    "required": false,
+                    "width": "full"
+                  }
+                ],
+                "buttonText": "Book Now",
+                "successMessage": "Thank you. Your appointment request has been received."
+              }
+            }
+          }
+        },
+        "contact": {
+          "variants": {
+            "PetContact3": {
+              "intro": {
+                "eyebrow": "CONTACT US",
+                "title": "We\u2019re Here for",
+                "highlightedTitle": "You and Your Pet",
+                "description": "Have a question, need an appointment, or want to know more about our services? Get in touch with our friendly team. We\u2019re always happy to help you and your furry family member."
+              },
+              "form": {
+                "title": "Send Us a Message",
+                "description": "Fill out the form below and we\u2019ll get back to you soon.",
+                "namePlaceholder": "Your Name",
+                "emailPlaceholder": "Your Email",
+                "phonePlaceholder": "Phone Number",
+                "servicePlaceholder": "Select Service",
+                "serviceOptions": [
+                  {
+                    "id": "contact-service-health",
+                    "label": "Health Checkup",
+                    "value": "health-checkup"
+                  },
+                  {
+                    "id": "contact-service-grooming",
+                    "label": "Grooming & Hygiene",
+                    "value": "grooming"
+                  },
+                  {
+                    "id": "contact-service-daycare",
+                    "label": "Pet Daycare",
+                    "value": "daycare"
+                  },
+                  {
+                    "id": "contact-service-boarding",
+                    "label": "Pet Boarding",
+                    "value": "boarding"
+                  }
+                ],
+                "messagePlaceholder": "Your Message",
+                "buttonText": "Send Message",
+                "successMessage": "Thank you. Your message has been submitted successfully."
+              },
+              "visual": {
+                "image": "/petlimb/contact.webp",
+                "imageAlt": "A pet parent relaxing with a spaniel and orange cat"
+              },
+              "contactItems": [
+                {
+                  "id": "contact-info-location",
+                  "icon": "FaMapMarkerAlt",
+                  "title": "Our Location",
+                  "lines": [
+                    {
+                      "id": "contact-location-street",
+                      "text": "48 Grove Street, New York, NY"
+                    }
+                  ],
+                  "url": "https://www.google.com/maps/search/?api=1&query=48+Grove+Street%2C+New+York%2C+NY"
+                },
+                {
+                  "id": "contact-info-phone",
+                  "icon": "FaPhoneAlt",
+                  "title": "Call Us",
+                  "lines": [
+                    {
+                      "id": "contact-phone-number",
+                      "text": "+1-212-555-0148"
+                    },
+                    {
+                      "id": "contact-phone-hours",
+                      "text": "Mon - Sat: 9:00 AM - 7:00 PM"
+                    }
+                  ],
+                  "url": "tel:+12125550148"
+                },
+                {
+                  "id": "contact-info-email",
+                  "icon": "FaEnvelope",
+                  "title": "Email Us",
+                  "lines": [
+                    {
+                      "id": "contact-email-address",
+                      "text": "hello@petlimb.com"
+                    },
+                    {
+                      "id": "contact-email-response",
+                      "text": "We usually reply within 24 hours."
+                    }
+                  ],
+                  "url": "mailto:hello@petlimb.com"
+                }
+              ]
+            }
+          }
+        },
+        "OurTeam": {
+          "variants": {
+            "PetOurTeam3": {
+              "eyebrow": "OUR TEAM",
+              "title": "A Team That Truly Cares",
+              "highlightedTitle": "For Your Pet's Wellbeing",
+              "description": "Meet the warm, highly trained people who make every Petlimb visit feel calm, clear and genuinely personal.",
+              "bannerImage": "/petlimb/team-v2.webp",
+              "bannerImageAlt": "The Petlimb care team with a golden retriever and gray cat",
+              "members": [
+                {
+                  "id": "team-page-aditi-sharma",
+                  "name": "Dr. Aditi Sharma",
+                  "role": "Veterinarian",
+                  "description": "Compassionate and experienced veterinarian focused on preventive care and overall pet health.",
+                  "image": "/team/team-1.webp",
+                  "imageAlt": "Veterinarian holding a small dog"
+                },
+                {
+                  "id": "team-page-rohan-mehta",
+                  "name": "Dr. Rohan Mehta",
+                  "role": "Pet Specialist",
+                  "description": "Passionate about pet wellness with expertise in diagnosis and personalized treatment plans.",
+                  "image": "/team/team-2.webp",
+                  "imageAlt": "Pet specialist holding a cat"
+                },
+                {
+                  "id": "team-page-sameer-kapoor",
+                  "name": "Sameer Kapoor",
+                  "role": "Pet Groomer",
+                  "description": "Skilled in grooming and hygiene care, ensuring every pet looks, feels, and stays their best.",
+                  "image": "/team/team-3.webp",
+                  "imageAlt": "Pet groomer holding a cat"
+                },
+                {
+                  "id": "team-page-arjun-verma",
+                  "name": "Arjun Verma",
+                  "role": "Pet Care Assistant",
+                  "description": "Dedicated to supporting pets with gentle care, attention, and a loving approach every day.",
+                  "image": "/team/team-4.webp",
+                  "imageAlt": "Pet care assistant holding a young goat"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "templateComponents": {
+        "shared": {
+          "Topbar": "PetTopBar3",
+          "Header": "PetHeader3",
+          "Breadcrumb": "PetBreadcrumb3",
+          "Footer": "PetFooter3"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "HeroSection",
+                "component": "PetHero3"
+              },
+              {
+                "key": "AboutUs",
+                "component": "PetAboutUs3"
+              },
+              {
+                "key": "OurService",
+                "component": "PetOurService3"
+              },
+              {
+                "key": "Care",
+                "component": "PetCare3"
+              },
+              {
+                "key": "Testimonial",
+                "component": "PetTestimonials3"
+              }
+            ]
+          },
+          "about": {
+            "components": [
+              {
+                "key": "AboutUs",
+                "component": "PetAboutUs3"
+              },
+              {
+                "key": "WhyChooseUs",
+                "component": "PetAboutWhyChooseUs3"
+              },
+              {
+                "key": "Testimonial",
+                "component": "PetTestimonials3"
+              }
+            ]
+          },
+          "gallery": {
+            "components": [
+              {
+                "key": "Gallery",
+                "component": "PetGallery3"
+              }
+            ]
+          },
+          "faqs": {
+            "components": [
+              {
+                "key": "Faq",
+                "component": "PetFaq3"
+              }
+            ]
+          },
+          "services": {
+            "components": [
+              {
+                "key": "ServicesPageContent",
+                "component": "PetServicesPage3"
+              }
+            ]
+          },
+          "serviceDetails": {
+            "components": [
+              {
+                "key": "ServiceDetail",
+                "component": "PetServiceDetail3"
+              }
+            ]
+          },
+          "contact": {
+            "components": [
+              {
+                "key": "Contact",
+                "component": "PetContact3"
+              }
+            ]
+          },
+          "bookNow": {
+            "components": [
+              {
+                "key": "BookAppointment",
+                "component": "PetBookAppointment3"
+              }
+            ]
+          },
+          "notFound": {
+            "components": [
+              {
+                "key": "NotFoundSection",
+                "component": "PetNotFound3"
+              }
+            ]
+          },
+          "team": {
+            "components": [
+              {
+                "key": "OurTeam",
+                "component": "PetOurTeam3"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

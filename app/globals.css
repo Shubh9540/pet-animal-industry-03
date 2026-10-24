@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-primary: 'Poppins', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-navigation: 'Poppins', sans-serif;
+  --color-bg-main: #fffaf3;
+  --color-bg-card: #ffffff;
+  --color-bg-light: #ffffff;
+  --color-bg-alt: #f1f0e7;
+  --color-primary: #173f35;
+  --color-primary-dark: #0d2b24;
+  --color-primary-light: #2f6557;
+  --color-secondary: #dbe5d3;
+  --color-accent: #e36f4f;
+  --color-accent-light: #f39a7f;
+  --color-text: #4a514d;
+  --color-text-light: #747c77;
+  --color-border: #dfe3d8;
+  --color-heading: #12372f;
+  --color-white: #ffffff;
+  --color-black: #111b18;
+  --color-navigation: #173f35;
+  --color-caption: #707b74;
+  --color-surface-soft: #f6f2e8;
+  --color-surface-active: #e8eee3;
+  --color-header-border: rgba(23, 63, 53, 0.12);
+  --color-white-50: rgba(255, 255, 255, 0.5);
+  --shadow-mobile-menu: 0 24px 70px rgba(13, 43, 36, 0.18);
+  --shadow-card: 0 20px 60px rgba(13, 43, 36, 0.10);
+}
+
+* { box-sizing: border-box; }
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, span, button, input, textarea, select {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--color-bg-main);
+  color: var(--color-text);
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--color-accent); color: var(--color-white); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
