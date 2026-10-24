@@ -167,11 +167,14 @@ export interface AboutUsData {
   imageMainAlt: string;
   buttonText: string;
   buttonUrl: string;
+  highlights?: string[];
+  extraDescription?: string;
 }
 
 export interface AboutUsProps {
   data?: AboutUsData;
   showButton?: boolean;
+  isAboutPage?: boolean;
 }
 
 export interface PaginationItem {
@@ -501,44 +504,6 @@ export interface ContactProps {
   data?: ContactData;
 }
 
-export interface BookAppointmentFormOption {
-  id: string;
-  title: string;
-  value: string;
-}
-
-export interface BookAppointmentField {
-  id: string;
-  name: string;
-  type: string;
-  label: string;
-  placeholder: string;
-  required: boolean;
-  width: string;
-  options?: BookAppointmentFormOption[];
-}
-
-export interface AppointmentFieldProps {
-  field: BookAppointmentField;
-}
-
-export interface BookAppointmentData {
-  intro: {
-    eyebrow: string;
-    title: string;
-    highlightedTitle: string;
-  };
-  form: {
-    fields: BookAppointmentField[];
-    buttonText: string;
-    successMessage: string;
-  };
-}
-
-export interface BookAppointmentProps {
-  data?: BookAppointmentData;
-}
-
 export interface SiteMetadataData {
   title: string;
   description: string;
@@ -556,7 +521,6 @@ export interface PetTemplateData {
     contactBreadcrumb?: BreadcrumbData;
     galleryBreadcrumb?: BreadcrumbData;
     teamBreadcrumb?: BreadcrumbData;
-    bookAppointmentBreadcrumb?: BreadcrumbData;
     notFound?: NotFoundData;
     Footer?: FooterData;
   };
@@ -578,7 +542,6 @@ export interface PetTemplateData {
         OurTeam?: { variants?: { PetOurTeam3?: OurTeamData } };
         whyChooseUs?: { variants?: { PetAboutWhyChooseUs3?: WhyChooseUsData } };
         contact?: { variants?: { PetContact3?: ContactData } };
-        BookAppointment?: { variants?: { PetBookAppointment3?: BookAppointmentData } };
       };
     };
   };

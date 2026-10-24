@@ -18,7 +18,7 @@ export default function AboutPage() {
       <TopBar data={sectionData.TopBar?.variants?.PetTopBar3} />
       <Header data={sectionData.Header?.variants?.PetHeader3} />
       <Breadcrumb data={templateData.common.aboutBreadcrumb} ui={templateData.common.globalUI} />
-      <AboutUs data={sectionData.AboutUs?.variants?.PetAboutUs3} showButton={false} />
+      <AboutUs data={sectionData.AboutUs?.variants?.PetAboutUs3} showButton={false} isAboutPage={true} />
       <WhyChooseUs data={sectionData.whyChooseUs?.variants?.PetAboutWhyChooseUs3} />
       <Testimonial data={sectionData.Testimonials?.variants?.PetTestimonials3} />
       <Footer data={templateData.common.Footer} />

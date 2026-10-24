@@ -10,12 +10,17 @@ export const ServicesPageContent = ({ data }: ServicesPageContentProps) => {
   return (
     <section className="bg-[var(--color-bg-main)] px-4 py-10 sm:px-6 lg:py-12">
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+        <div className="grid gap-8 border-b border-[var(--color-border)]/60 pb-8 lg:grid-cols-2 lg:items-center">
           <div>
             <p className="text-xs font-extrabold uppercase tracking-[0.22em] text-[var(--color-accent)]">{data.eyebrow}</p>
-            <h2 className="mt-4 font-heading text-4xl font-semibold leading-none text-[var(--color-heading)] sm:text-5xl lg:text-6xl">{data.title} <span className="italic text-[var(--color-accent)]">{data.highlightedTitle}</span></h2>
+            <h2 className="mt-3 font-heading text-4xl font-semibold leading-[1.12] text-[var(--color-heading)] sm:text-5xl lg:text-5xl xl:text-6xl">
+              {data.title}{' '}
+              <span className="italic text-[var(--color-accent)]">{data.highlightedTitle}</span>
+            </h2>
           </div>
-          <p className="max-w-2xl text-sm leading-7 text-[var(--color-text)] lg:pl-10">{data.description}</p>
+          <div className="lg:pl-8 xl:pl-12">
+            <p className="max-w-xl text-base leading-7 text-[var(--color-text)]">{data.description}</p>
+          </div>
         </div>
         <div className="mt-9 grid gap-5 md:grid-cols-2">
           {data.cards.map((card, index) => (

@@ -1,8 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { HeroSectionProps } from '@/types/templates.types';
-import { FaArrowRight, FaHeart, FaPaw } from 'react-icons/fa';
+import { FaHeart, FaPaw } from 'react-icons/fa';
 
 export const HeroSection = ({ data }: HeroSectionProps) => {
   if (!data) return null;
@@ -24,11 +23,8 @@ export const HeroSection = ({ data }: HeroSectionProps) => {
               {data.titleLine1}{' '}<span className="italic text-[var(--color-accent)]">{data.highlightedTitle}</span>{' '}{data.titleLine2}
             </h1>
             <p className="mt-7 max-w-lg text-base leading-8 text-[var(--color-text)] sm:text-lg">{data.trustHighlight}</p>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <Link href={data.ctaUrl} className="group inline-flex h-14 items-center justify-center gap-3 rounded-md bg-[var(--color-primary)] px-7 text-xs font-semibold uppercase tracking-[0.08em] text-[var(--color-white)] shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-[var(--color-accent)] hover:shadow-[0_12px_24px_rgba(227,111,79,0.35)] active:translate-y-0">
-                {data.ctaText}<FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1.5" />
-              </Link>
-              <span className="group flex items-center justify-center gap-3 text-sm font-bold text-[var(--color-primary)] sm:justify-start">
+            <div className="mt-8 flex items-center">
+              <span className="group flex items-center gap-3 text-sm font-bold text-[var(--color-primary)]">
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-secondary)] transition-all duration-500 group-hover:rotate-12 group-hover:bg-[var(--color-accent)] group-hover:text-[var(--color-white)]"><FaPaw /></span>
                 {data.ctaIconLabel}
               </span>

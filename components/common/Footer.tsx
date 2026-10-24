@@ -39,13 +39,6 @@ export const Footer = ({ data }: FooterProps) => {
               <span className="text-4xl font-semibold tracking-[-0.05em] sm:text-5xl">{data.brandName}</span>
             </Link>
             <p className="mt-6 max-w-xl text-lg leading-8 tracking-[-0.02em] text-[var(--color-white)]/70 sm:text-xl">{data.description}</p>
-            <div className="mt-6 flex gap-2">
-              {data.socialLinks.map((social) => (
-                <a key={social.id} href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.label} className="flex h-9 w-9 items-center justify-center rounded-full border border-[var(--color-white)]/20 text-xs transition-all duration-300 hover:-translate-y-1 hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)]">
-                  {renderSocialIcon(social.icon)}
-                </a>
-              ))}
-            </div>
           </Reveal>
           <Reveal direction="right" delay={0.12} className="relative hidden h-[190px] overflow-hidden lg:block">
             <Image src={data.footerImage} alt={data.footerImageAlt} fill sizes="36vw" className="object-cover opacity-80 grayscale-[20%] transition-all duration-1000 hover:scale-105 hover:opacity-100 hover:grayscale-0" />
@@ -75,9 +68,15 @@ export const Footer = ({ data }: FooterProps) => {
             </ul>
           </Reveal>
         </div>
-        <div className="flex flex-col items-center justify-between gap-3 pt-6 text-center text-[11px] uppercase tracking-[0.1em] text-[var(--color-white)]/45 sm:flex-row sm:text-left">
+        <div className="flex flex-col items-center justify-between gap-4 pt-6 text-center text-[11px] uppercase tracking-[0.1em] text-[var(--color-white)]/45 sm:flex-row sm:text-left">
           <p>{data.copyrightText}</p>
-          <p className="font-semibold uppercase tracking-[0.16em]">{data.socialTitle}</p>
+          <div className="flex items-center gap-2">
+            {data.socialLinks.map((social) => (
+              <a key={social.id} href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.label} className="flex h-8 w-8 items-center justify-center rounded-full border border-[var(--color-white)]/20 text-xs text-[var(--color-white)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)]">
+                {renderSocialIcon(social.icon)}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </footer>

@@ -22,18 +22,25 @@ export const Gallery = ({ data }: GalleryProps) => {
   return (
     <section className="bg-[var(--color-bg-main)] px-4 py-10 sm:px-6 lg:py-12">
       <div className="mx-auto max-w-7xl">
-        <Reveal className="max-w-3xl">
-          <p className="text-xs font-extrabold uppercase tracking-[0.22em] text-[var(--color-accent)]">{data.subtitle}</p>
-          <h2 className="mt-4 font-heading text-4xl font-semibold leading-none text-[var(--color-heading)] sm:text-5xl lg:text-6xl">{data.title} <span className="italic text-[var(--color-accent)]">{data.highlightedTitle}</span></h2>
-          <p className="mt-5 text-sm leading-7 text-[var(--color-text)]">{data.description}</p>
-        </Reveal>
-        <div className="mt-9 grid auto-rows-[220px] gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 border-b border-[var(--color-border)]/60 pb-8 lg:grid-cols-2 lg:items-center">
+          <Reveal direction="left">
+            <p className="text-xs font-extrabold uppercase tracking-[0.22em] text-[var(--color-accent)]">{data.subtitle}</p>
+            <h2 className="mt-3 font-heading text-4xl font-semibold leading-[1.12] text-[var(--color-heading)] sm:text-5xl lg:text-5xl xl:text-6xl">
+              {data.title}{' '}
+              <span className="italic text-[var(--color-accent)]">{data.highlightedTitle}</span>
+            </h2>
+          </Reveal>
+          <Reveal direction="right" delay={0.1} className="lg:pl-8 xl:pl-12">
+            <p className="max-w-xl text-base leading-7 text-[var(--color-text)]">{data.description}</p>
+          </Reveal>
+        </div>
+        <div className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {data.images.map((item, index) => (
-            <Reveal key={item.id} delay={(index % 4) * 0.06} className={index === 0 || index === 5 ? 'sm:col-span-2 sm:row-span-2' : ''}>
-            <button type="button" aria-label={data.openLabel} onClick={() => setActiveIndex(index)} className="group relative h-full w-full overflow-hidden rounded-xl text-left">
-              <Image src={item.image} alt={item.imageAlt} fill sizes="(max-width: 640px) 100vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
-              <span className="absolute inset-0 bg-gradient-to-t from-[var(--color-primary-dark)]/70 via-transparent to-transparent opacity-70 transition-opacity group-hover:opacity-100" />
-              <span className="absolute bottom-4 left-4 rounded-full bg-[var(--color-white)]/90 px-4 py-2 text-[10px] font-extrabold uppercase tracking-[0.16em] text-[var(--color-primary)]">{item.category}</span>
+            <Reveal key={item.id} delay={(index % 4) * 0.06} className="h-full">
+            <button type="button" aria-label={data.openLabel} onClick={() => setActiveIndex(index)} className="group relative aspect-[4/3] w-full overflow-hidden rounded-2xl text-left shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl">
+              <Image src={item.image} alt={item.imageAlt} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
+              <span className="absolute inset-0 bg-gradient-to-t from-[var(--color-primary-dark)]/75 via-transparent to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-90" />
+              <span className="absolute bottom-4 left-4 rounded-full bg-[var(--color-white)]/90 px-3.5 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.14em] text-[var(--color-primary)] shadow-sm">{item.category}</span>
             </button>
             </Reveal>
           ))}

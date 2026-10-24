@@ -164,20 +164,6 @@
         }
       ]
     },
-    "bookAppointmentBreadcrumb": {
-      "title": "Book Now",
-      "paths": [
-        {
-          "id": "breadcrumb-book-event-home",
-          "label": "Home",
-          "url": "/"
-        },
-        {
-          "id": "breadcrumb-book-event-current",
-          "label": "Book Now"
-        }
-      ]
-    },
     "galleryBreadcrumb": {
       "title": "Gallery",
       "paths": [
@@ -263,26 +249,21 @@
                   "id": "nav-team",
                   "label": "Our Team",
                   "url": "/team"
-                },
-                {
-                  "id": "nav-contact",
-                  "label": "Contact Us",
-                  "url": "/contact"
                 }
               ],
               "navLinksRight": [],
               "contactButton": {
-                "text": "Book Now",
-                "url": "/book-now",
-                "icon": "FaCalendarAlt"
+                "text": "Contact Us",
+                "url": "/contact",
+                "icon": "FaEnvelope"
               },
               "openMenuLabel": "Open navigation menu",
               "closeMenuLabel": "Close navigation menu",
               "phoneNumber": "+1-212-555-0148",
               "phoneUrl": "tel:+12125550148",
               "phoneCaption": "Speak to Our Pet Care Expert",
-              "favoritesUrl": "/book-now",
-              "favoritesLabel": "Book Now"
+              "favoritesUrl": "/contact",
+              "favoritesLabel": "Contact Us"
             }
           }
         },
@@ -297,7 +278,7 @@
               "trustLead": "Boutique care, beautifully considered",
               "trustHighlight": "healthier pets and calmer humans.",
               "ctaText": "Plan a Visit",
-              "ctaUrl": "/book-now",
+              "ctaUrl": "/contact",
               "ctaIconLabel": "Trusted local specialists"
             }
           }
@@ -308,6 +289,7 @@
               "titleLine1": "Care that feels",
               "highlightedTitle": "personal",
               "description": "At Petlimb, expert care meets a calmer, more considered experience. Every visit is shaped around your pet’s comfort, routine and long-term wellbeing.",
+              "extraDescription": "Our sanctuary combines preventive veterinary insight with a peaceful boutique atmosphere. From tailored nutritional guidance and stress-free grooming to compassionate day wellness programs, we nurture every stage of your companion's life with deep empathy and scientific precision.",
               "imageMain": "/petlimb/about.webp",
               "imageMainAlt": "A caring pet wellness specialist with a calm cream-colored dog",
               "eyebrow": "THE PETLIMB APPROACH",
@@ -419,7 +401,7 @@
                   "id": "faq-book-appointment",
                   "number": "05",
                   "question": "How do I book an appointment?",
-                  "answer": "Use the Book Now button, call our care team, or send us a message with your preferred service, date, and time."
+                  "answer": "Use the Contact Us button, call our care team, or send us a message with your preferred service, date, and time."
                 },
                 {
                   "id": "faq-vaccinations",
@@ -506,7 +488,7 @@
               "eyebrow": "OUR SERVICES",
               "title": "Complete Care",
               "highlightedTitle": "For A Happier, Healthier Pet",
-              "description": "From preventive wellness to everyday comfort, Petlimb offers thoughtful services that help pets feel their brightest.",
+              "description": "From preventive wellness checkups to everyday comfort and grooming, Petlimb offers thoughtful, tailored services designed to keep your furry companions feeling safe, relaxed, and thriving at every stage of life.",
               "cards": [
                 {
                   "id": "services-page-health-checkup",
@@ -794,169 +776,6 @@
             }
           }
         },
-        "BookAppointment": {
-          "variants": {
-            "PetBookAppointment3": {
-              "intro": {
-                "eyebrow": "BOOK YOUR VISIT",
-                "title": "Plan their next",
-                "highlightedTitle": "happy visit"
-              },
-              "form": {
-                "fields": [
-                  {
-                    "id": "appointment-owner-name",
-                    "name": "ownerName",
-                    "type": "text",
-                    "label": "Pet Owner Name",
-                    "placeholder": "Pet Owner Name *",
-                    "required": true,
-                    "width": "half"
-                  },
-                  {
-                    "id": "appointment-email",
-                    "name": "email",
-                    "type": "email",
-                    "label": "Email Address",
-                    "placeholder": "Email Address *",
-                    "required": true,
-                    "width": "half"
-                  },
-                  {
-                    "id": "appointment-phone",
-                    "name": "phone",
-                    "type": "tel",
-                    "label": "Phone Number",
-                    "placeholder": "Phone Number *",
-                    "required": true,
-                    "width": "half"
-                  },
-                  {
-                    "id": "appointment-pet-name",
-                    "name": "petName",
-                    "type": "text",
-                    "label": "Pet Name",
-                    "placeholder": "Pet Name *",
-                    "required": true,
-                    "width": "half"
-                  },
-                  {
-                    "id": "appointment-pet-type",
-                    "name": "petType",
-                    "type": "select",
-                    "label": "Pet Type",
-                    "placeholder": "Pet Type *",
-                    "required": true,
-                    "width": "half",
-                    "options": [
-                      {
-                        "id": "appointment-pet-dog",
-                        "title": "Dog",
-                        "value": "dog"
-                      },
-                      {
-                        "id": "appointment-pet-cat",
-                        "title": "Cat",
-                        "value": "cat"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "appointment-breed",
-                    "name": "breed",
-                    "type": "text",
-                    "label": "Breed",
-                    "placeholder": "Breed (Optional)",
-                    "required": false,
-                    "width": "half"
-                  },
-                  {
-                    "id": "appointment-date",
-                    "name": "preferredDate",
-                    "type": "date",
-                    "label": "Preferred Date",
-                    "placeholder": "Preferred Date *",
-                    "required": true,
-                    "width": "half"
-                  },
-                  {
-                    "id": "appointment-time",
-                    "name": "preferredTime",
-                    "type": "select",
-                    "label": "Preferred Time",
-                    "placeholder": "Preferred Time *",
-                    "required": true,
-                    "width": "half",
-                    "options": [
-                      {
-                        "id": "appointment-time-morning",
-                        "title": "9:00 AM - 11:00 AM",
-                        "value": "9am-11am"
-                      },
-                      {
-                        "id": "appointment-time-late-morning",
-                        "title": "11:00 AM - 1:00 PM",
-                        "value": "11am-1pm"
-                      },
-                      {
-                        "id": "appointment-time-afternoon",
-                        "title": "2:00 PM - 4:00 PM",
-                        "value": "2pm-4pm"
-                      },
-                      {
-                        "id": "appointment-time-evening",
-                        "title": "4:00 PM - 6:00 PM",
-                        "value": "4pm-6pm"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "appointment-service",
-                    "name": "service",
-                    "type": "select",
-                    "label": "Service Required",
-                    "placeholder": "Service Required *",
-                    "required": true,
-                    "width": "full",
-                    "options": [
-                      {
-                        "id": "appointment-service-health",
-                        "title": "General Health Checkup",
-                        "value": "health-checkup"
-                      },
-                      {
-                        "id": "appointment-service-grooming",
-                        "title": "Grooming & Hygiene",
-                        "value": "grooming"
-                      },
-                      {
-                        "id": "appointment-service-daycare",
-                        "title": "Pet Daycare",
-                        "value": "daycare"
-                      },
-                      {
-                        "id": "appointment-service-boarding",
-                        "title": "Pet Boarding",
-                        "value": "boarding"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "appointment-message",
-                    "name": "message",
-                    "type": "textarea",
-                    "label": "Additional Information",
-                    "placeholder": "Additional Information (Optional)",
-                    "required": false,
-                    "width": "full"
-                  }
-                ],
-                "buttonText": "Book Now",
-                "successMessage": "Thank you. Your appointment request has been received."
-              }
-            }
-          }
-        },
         "contact": {
           "variants": {
             "PetContact3": {
@@ -1184,14 +1003,6 @@
               {
                 "key": "Contact",
                 "component": "PetContact3"
-              }
-            ]
-          },
-          "bookNow": {
-            "components": [
-              {
-                "key": "BookAppointment",
-                "component": "PetBookAppointment3"
               }
             ]
           },

@@ -22,13 +22,16 @@ export const OurService = ({ data, limit }: OurServiceProps) => {
   return (
     <section className="bg-[var(--color-primary-dark)] px-4 py-10 text-[var(--color-white)] sm:px-6 lg:py-12">
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-8 border-b border-[var(--color-white)]/15 pb-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+        <div className="grid gap-8 border-b border-[var(--color-white)]/15 pb-8 lg:grid-cols-2 lg:items-center">
           <Reveal direction="left">
             <p className="text-xs font-extrabold uppercase tracking-[0.22em] text-[var(--color-accent-light)]">{data.subtitle}</p>
-            <h2 className="mt-4 font-heading text-4xl font-semibold leading-none sm:text-5xl lg:text-6xl">{data.titleLine1} {data.titleLine2} <span className="italic text-[var(--color-accent-light)]">{data.highlightedTitle}</span></h2>
+            <h2 className="mt-3 font-heading text-4xl font-semibold leading-[1.12] sm:text-5xl lg:text-5xl xl:text-6xl">
+              {data.titleLine1} {data.titleLine2}{' '}
+              <span className="italic text-[var(--color-accent-light)]">{data.highlightedTitle}</span>
+            </h2>
           </Reveal>
-          <Reveal direction="right" delay={0.1} className="lg:pl-12">
-            <p className="max-w-xl text-sm leading-7 text-[var(--color-white)]/70">{data.description}</p>
+          <Reveal direction="right" delay={0.1} className="lg:pl-8 xl:pl-12">
+            <p className="max-w-xl text-base leading-7 text-[var(--color-white)]/75">{data.description}</p>
             <Link href={data.linkUrl} className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[var(--color-accent-light)] transition-all hover:gap-4">{data.linkText}<FaArrowRight /></Link>
           </Reveal>
         </div>

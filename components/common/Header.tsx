@@ -60,7 +60,6 @@ export const Header = ({ data }: HeaderProps) => {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a href={data.phoneUrl} aria-label={data.phoneCaption} className="flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-border)] text-sm text-[var(--color-primary)] transition-all duration-300 hover:border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-[var(--color-white)]"><FaPhoneAlt /></a>
           <Link href={data.contactButton.url} className="group flex h-11 items-center gap-3 rounded-md bg-[var(--color-primary)] px-5 text-xs font-semibold uppercase tracking-[0.08em] text-[var(--color-white)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[var(--color-accent)] hover:shadow-lg">
             {data.contactButton.text}<FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
           </Link>

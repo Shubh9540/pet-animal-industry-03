@@ -3,9 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { AboutUsProps } from '@/types/templates.types';
 import { Reveal } from '@/components/ui/Reveal';
-import { FaArrowRight, FaCheck, FaPaw } from 'react-icons/fa';
+import { FaArrowRight, FaPaw } from 'react-icons/fa';
 
-export const AboutUs = ({ data, showButton = true }: AboutUsProps) => {
+export const AboutUs = ({ data, showButton = true, isAboutPage = false }: AboutUsProps) => {
   if (!data) return null;
 
   return (
@@ -24,19 +24,15 @@ export const AboutUs = ({ data, showButton = true }: AboutUsProps) => {
           <p className="flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.22em] text-[var(--color-accent)]">
             <span className="h-px w-8 bg-[var(--color-accent)]" />{data.eyebrow}
           </p>
-          <h2 className="mt-5 font-heading text-4xl font-semibold leading-[0.98] tracking-tight text-[var(--color-heading)] sm:text-5xl lg:text-6xl">
+          <h2 className="mt-4 font-heading text-4xl font-semibold leading-[1.15] tracking-tight text-[var(--color-heading)] sm:text-5xl lg:text-6xl">
             {data.titleLine1} <span className="italic text-[var(--color-accent)]">{data.highlightedTitle}</span> {data.titleLine2}
           </h2>
-          <p className="mt-6 text-base leading-8 text-[var(--color-text)]">{data.description}</p>
-          <div className="mt-7 grid gap-3 sm:grid-cols-2">
-            {[data.titleLine1, data.highlightedTitle].map((item) => (
-              <div key={item} className="flex items-center gap-3 border-l-2 border-[var(--color-accent)] bg-[var(--color-surface-soft)] px-4 py-3 text-sm font-semibold text-[var(--color-primary)] transition-transform duration-300 hover:translate-x-1">
-                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--color-primary)] text-xs text-[var(--color-white)]"><FaCheck /></span>{item}
-              </div>
-            ))}
-          </div>
+          <p className="mt-5 text-base leading-relaxed text-[var(--color-text)]">{data.description}</p>
+          {isAboutPage && data.extraDescription && (
+            <p className="mt-4 text-base leading-relaxed text-[var(--color-text)]">{data.extraDescription}</p>
+          )}
           {showButton && (
-            <Link href={data.buttonUrl} className="group mt-8 inline-flex h-14 items-center gap-3 rounded-md border border-[var(--color-primary)] px-6 text-xs font-semibold uppercase tracking-[0.08em] text-[var(--color-primary)] transition-all hover:bg-[var(--color-primary)] hover:text-[var(--color-white)]">
+            <Link href={data.buttonUrl} className="group mt-7 inline-flex h-14 items-center gap-3 rounded-md border border-[var(--color-primary)] px-6 text-xs font-semibold uppercase tracking-[0.08em] text-[var(--color-primary)] transition-all hover:bg-[var(--color-primary)] hover:text-[var(--color-white)]">
               {data.buttonText}<FaArrowRight />
             </Link>
           )}
