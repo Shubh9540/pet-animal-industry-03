@@ -16,9 +16,12 @@ export const metadata: Metadata = {
   title: templateData.common.metadata.title,
   description: templateData.common.metadata.description,
   icons: {
-    icon: templateData.common.metadata.icon,
-    shortcut: templateData.common.metadata.icon,
-    apple: templateData.common.metadata.icon,
+    icon: [
+      { url: '/main logo/favicon.webp' },
+      { url: '/favicon.ico' }
+    ],
+    shortcut: '/main logo/favicon.webp',
+    apple: '/main logo/favicon.webp',
   },
 };
 
