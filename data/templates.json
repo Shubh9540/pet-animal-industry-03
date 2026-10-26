@@ -19,12 +19,12 @@
     "Footer": {
       "brandName": "Petlimb",
       "description": "Thoughtful care for bright eyes, wagging tails and the people who love them.",
-      "logo": "/main logo/logo.webp",
+      "logo": "/main logo/footer_logo.webp",
       "logoAlt": "Petlimb Pet Wellness",
       "logoUrl": "/",
       "footerImage": "/main logo/footer_image.webp",
       "footerImageAlt": "Petlimb dog and cat companions",
-      "copyrightText": "© 2026 Petlimb Pet Wellness. All rights reserved.",
+      "copyrightText": "© 2026 Petlimb Pet Wellness. All rights reserved. Powered By Lestow",
       "quickLinksTitle": "MENU",
       "contactTitle": "CONTACT",
       "socialTitle": "SOCIAL",
@@ -84,20 +84,20 @@
         {
           "id": "contact-address",
           "icon": "FaMapMarkerAlt",
-          "value": "48 Grove Street, New York, NY",
-          "url": "https://www.google.com/maps/search/?api=1&query=48+Grove+Street%2C+New+York%2C+NY"
+          "value": "123 Main St, New York, NY, USA",
+          "url": "https://www.google.com/maps/search/?api=1&query=123+Main+St%2C+New+York%2C+NY%2C+USA"
         },
         {
           "id": "contact-phone",
           "icon": "FaPhoneAlt",
-          "value": "+1-212-555-0148",
-          "url": "tel:+12125550148"
+          "value": "+1 000000000",
+          "url": "tel:+1000000000"
         },
         {
           "id": "contact-email",
           "icon": "FaEnvelope",
-          "value": "hello@petlimb.com",
-          "url": "mailto:hello@petlimb.com"
+          "value": "info@xyz.com",
+          "url": "mailto:info@xyz.com"
         }
       ]
     },
@@ -201,12 +201,20 @@
             "PetTopBar3": {
               "tagline": "Calm care. Happier companions.",
               "taglineIcon": "FaChartLine",
-              "phoneValue": "+1-212-555-0148",
-              "emailValue": "hello@petlimb.com",
-              "locationValue": "West Village, New York",
+              "phoneValue": "+1 000000000",
+              "emailValue": "info@xyz.com",
+              "locationValue": "123 Main St, New York, NY, USA",
               "socialLinks": [
-                { "id": "top-instagram", "icon": "FaInstagram", "url": "https://instagram.com" },
-                { "id": "top-youtube", "icon": "FaYoutube", "url": "https://youtube.com" }
+                {
+                  "id": "top-instagram",
+                  "icon": "FaInstagram",
+                  "url": "https://instagram.com"
+                },
+                {
+                  "id": "top-youtube",
+                  "icon": "FaYoutube",
+                  "url": "https://youtube.com"
+                }
               ]
             }
           }
@@ -214,8 +222,8 @@
         "Header": {
           "variants": {
             "PetHeader3": {
-              "brandName": "Petlimb",
-              "brandTagline": "Pet wellness, thoughtfully done",
+              "brandName": "",
+              "brandTagline": "",
               "logo": "/main logo/logo.webp",
               "logoAlt": "Petlimb Pet Wellness",
               "logoUrl": "/",
@@ -259,8 +267,8 @@
               },
               "openMenuLabel": "Open navigation menu",
               "closeMenuLabel": "Close navigation menu",
-              "phoneNumber": "+1-212-555-0148",
-              "phoneUrl": "tel:+12125550148",
+              "phoneNumber": "+1 000000000",
+              "phoneUrl": "tel:+1000000000",
               "phoneCaption": "Speak to Our Pet Care Expert",
               "favoritesUrl": "/contact",
               "favoritesLabel": "Contact Us"
@@ -272,7 +280,7 @@
             "PetHero3": {
               "titleLine1": "A softer way to",
               "highlightedTitle": "care deeply",
-              "image": "/petlimb/hero-v2.webp",
+              "image": "/banner/banner1.webp",
               "imageAlt": "A golden retriever and gray tabby cat in a warm modern pet wellness studio",
               "titleLine2": "for every paw.",
               "trustLead": "Boutique care, beautifully considered",
@@ -830,10 +838,10 @@
                   "lines": [
                     {
                       "id": "contact-location-street",
-                      "text": "48 Grove Street, New York, NY"
+                      "text": "123 Main St, New York, NY, USA"
                     }
                   ],
-                  "url": "https://www.google.com/maps/search/?api=1&query=48+Grove+Street%2C+New+York%2C+NY"
+                  "url": "https://www.google.com/maps/search/?api=1&query=123+Main+St%2C+New+York%2C+NY%2C+USA"
                 },
                 {
                   "id": "contact-info-phone",
@@ -842,14 +850,14 @@
                   "lines": [
                     {
                       "id": "contact-phone-number",
-                      "text": "+1-212-555-0148"
+                      "text": "+1 000000000"
                     },
                     {
                       "id": "contact-phone-hours",
                       "text": "Mon - Sat: 9:00 AM - 7:00 PM"
                     }
                   ],
-                  "url": "tel:+12125550148"
+                  "url": "tel:+1000000000"
                 },
                 {
                   "id": "contact-info-email",
@@ -858,14 +866,14 @@
                   "lines": [
                     {
                       "id": "contact-email-address",
-                      "text": "hello@petlimb.com"
+                      "text": "info@xyz.com"
                     },
                     {
                       "id": "contact-email-response",
                       "text": "We usually reply within 24 hours."
                     }
                   ],
-                  "url": "mailto:hello@petlimb.com"
+                  "url": "mailto:info@xyz.com"
                 }
               ]
             }

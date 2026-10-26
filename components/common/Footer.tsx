@@ -35,8 +35,21 @@ export const Footer = ({ data }: FooterProps) => {
         <div className="grid items-end gap-8 border-b border-[var(--color-white)]/15 pb-10 lg:grid-cols-[1.25fr_0.75fr]">
           <Reveal direction="left" className="max-w-2xl">
             <Link href={data.logoUrl} aria-label={data.logoAlt} className="group inline-flex items-center gap-3">
-              <span className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-accent)] text-[var(--color-accent-light)] transition-all duration-500 group-hover:rotate-12 group-hover:bg-[var(--color-accent)] group-hover:text-[var(--color-white)]"><FaPaw /></span>
-              <span className="text-4xl font-semibold tracking-[-0.05em] sm:text-5xl">{data.brandName}</span>
+              {data.logo ? (
+                <div className="relative h-14 w-52 sm:h-16 sm:w-60">
+                  <Image
+                    src={data.logo}
+                    alt={data.logoAlt || data.brandName}
+                    fill
+                    className="object-contain object-left"
+                  />
+                </div>
+              ) : (
+                <>
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-accent)] text-[var(--color-accent-light)] transition-all duration-500 group-hover:rotate-12 group-hover:bg-[var(--color-accent)] group-hover:text-[var(--color-white)]"><FaPaw /></span>
+                  <span className="text-4xl font-semibold tracking-[-0.05em] sm:text-5xl">{data.brandName}</span>
+                </>
+              )}
             </Link>
             <p className="mt-6 max-w-xl text-lg leading-8 tracking-[-0.02em] text-[var(--color-white)]/70 sm:text-xl">{data.description}</p>
           </Reveal>

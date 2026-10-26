@@ -30,12 +30,13 @@ export const Contact = ({ data }: ContactProps) => {
         <div className="grid items-stretch lg:grid-cols-[0.92fr_1.08fr] lg:py-4">
           <Reveal direction="left" className="relative z-10 min-h-[430px] overflow-hidden lg:my-8 lg:min-h-[560px] lg:shadow-[0_26px_70px_rgba(13,43,36,0.18)]">
             <Image src={data.visual.image} alt={data.visual.imageAlt} fill sizes="(max-width: 1024px) 100vw, 46vw" className="object-cover transition-transform duration-1000 hover:scale-[1.025]" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-primary-dark)]/90 via-[var(--color-primary-dark)]/15 to-transparent" />
+            <div className="absolute inset-0 bg-black/15" />
+            <div className="absolute inset-x-0 bottom-0 h-4/5 bg-gradient-to-t from-[var(--color-primary-dark)] via-[var(--color-primary-dark)]/85 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-7 text-[var(--color-white)] sm:p-10">
               <div className="mb-5 h-px w-14 bg-[var(--color-accent-light)]" />
               <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[var(--color-accent-light)]">{data.intro.eyebrow}</p>
               <h2 className="mt-3 max-w-xl font-heading text-4xl font-medium leading-[1.02] sm:text-5xl lg:text-6xl">{data.intro.title} <span className="italic text-[var(--color-accent-light)]">{data.intro.highlightedTitle}</span></h2>
-              <p className="mt-5 max-w-lg text-sm leading-7 text-[var(--color-white)]/75">{data.intro.description}</p>
+              <p className="mt-5 max-w-lg text-sm leading-7 text-[var(--color-white)]/90">{data.intro.description}</p>
             </div>
           </Reveal>
           <Reveal direction="right" delay={0.12} className="border border-[var(--color-border)] bg-[var(--color-white)] p-6 sm:p-10 lg:pl-16 lg:pr-12">

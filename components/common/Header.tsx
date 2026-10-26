@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { HeaderProps } from '@/types/templates.types';
@@ -41,11 +42,25 @@ export const Header = ({ data }: HeaderProps) => {
     <header className={`sticky top-0 z-50 w-screen max-w-full border-b transition-all duration-300 ${scrolled ? 'border-gray-100 bg-white shadow-md' : 'border-transparent bg-white'}`}>
       <div className={`mx-auto flex w-screen min-w-0 max-w-full items-center justify-between gap-4 px-4 transition-all duration-300 sm:px-6 lg:max-w-7xl ${scrolled ? 'h-16 lg:h-[70px]' : 'h-[72px] lg:h-[86px]'}`}>
         <Link href={data.logoUrl} aria-label={data.logoAlt} className="group flex items-center gap-3">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-accent)] bg-[var(--color-accent)] text-[var(--color-white)] transition-all duration-500 group-hover:rotate-12 group-hover:bg-transparent group-hover:text-[var(--color-accent)]"><FaPaw /></span>
-          <span className="flex flex-col">
-            <span className="text-[26px] font-semibold leading-6 tracking-[-0.045em] text-[var(--color-heading)]">{data.brandName}</span>
-            <span className="mt-1 hidden text-[7px] font-semibold uppercase tracking-[0.28em] text-[var(--color-text-light)] sm:block">{data.brandTagline}</span>
-          </span>
+          {data.logo ? (
+            <div className="relative h-12 w-44 sm:h-14 sm:w-52 lg:h-16 lg:w-60">
+              <Image
+                src={data.logo}
+                alt={data.logoAlt || data.brandName}
+                fill
+                className="object-contain object-left"
+                priority
+              />
+            </div>
+          ) : (
+            <>
+              <span className="flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-accent)] bg-[var(--color-accent)] text-[var(--color-white)] transition-all duration-500 group-hover:rotate-12 group-hover:bg-transparent group-hover:text-[var(--color-accent)]"><FaPaw /></span>
+              <span className="flex flex-col">
+                <span className="text-[26px] font-semibold leading-6 tracking-[-0.045em] text-[var(--color-heading)]">{data.brandName}</span>
+                <span className="mt-1 hidden text-[7px] font-semibold uppercase tracking-[0.28em] text-[var(--color-text-light)] sm:block">{data.brandTagline}</span>
+              </span>
+            </>
+          )}
         </Link>
 
         <nav aria-label={data.logoAlt} className="hidden items-center gap-7 lg:flex">
